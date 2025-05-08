@@ -2,7 +2,7 @@
 
 # 嵌入日志
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source ${SCRIPT_DIR}/core/log.sh
+source "${SCRIPT_DIR}/core/log.sh"
 
 for dir in ./*/; do
     if [ -f "${dir}/go.mod" ]; then
