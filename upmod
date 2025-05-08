@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # 嵌入日志
-source core/log.sh
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source ${SCRIPT_DIR}/../core/log.sh
 
 for dir in ./*/; do
     if [ -f "${dir}/go.mod" ]; then
