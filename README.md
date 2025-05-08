@@ -5,5 +5,5 @@
 ## 安装
 
 ```shell
-curl -sSL https://ghp.ci/https://raw.githubusercontent.com/storezhang/go/master/install.sh | bash
+curl -L -o go.zip https://github.com/storezhang/go/archive/refs/heads/master.zip && unzip -o go.zip -d /usr/bin && rm go.zip
 ```
